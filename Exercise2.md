@@ -11,13 +11,13 @@ classDiagram
     University "1" *-- "1..*" Department
     Department "0..*" o-- "1..*" Lecturer
 ```
-## Explanation of relationships:
+****## Explanation of relationships:
 ### 1. University and Department- Composition
-The relationship between **University** and **Department** is **compositon (◆)** because departments depend on the university for their existence.
+The relationship between **University** and **Department** is **composition (◆)** because departments depend on the university for their existence.
 - **1:** Each department belongs to exactly one university.
 - **1..*** : A university has one or more departments.
  
-If the university closes , its departments also cease to exist.
+If the university closes , its departments also cease to exist.****
 
 ### 2. Department and Lecturer- Aggregation
 The relationship between **Department** and **Lecturer** is **aggregation (◇)** because lecturers can exist independently of a particular department. 
